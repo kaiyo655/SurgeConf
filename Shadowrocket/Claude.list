@@ -1,0 +1,76 @@
+# Claude / Claude Code · Shadowrocket RULE-SET · 2026-11-21
+# 在主配置中绑定策略组「🤖 AI 服务」。共享域名对所有应用生效。
+# 来源：两篇 Obsidian 剪藏、当日本地 Rulesets Config.conf、v2fly/data/anthropic、
+# wquguru/one-exit@b9d9f8a、https://platform.claude.com/docs/en/api/ip-addresses
+
+# 产品、API、MCP、附件及静态内容。后缀规则含根域和子域。
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+
+# v2fly 社区清单补充
+DOMAIN-SUFFIX,ant.dev
+DOMAIN-SUFFIX,anthropic.team
+DOMAIN-SUFFIX,antspace.dev
+DOMAIN-SUFFIX,chatbotclaude.com
+DOMAIN-SUFFIX,claude.dev
+DOMAIN-SUFFIX,claude.new
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudeacademy.com
+DOMAIN-SUFFIX,claudepages.dev
+DOMAIN-SUFFIX,claudestudio.com
+DOMAIN-SUFFIX,modelcontextprotocol.io
+
+# 登录、身份验证及支付；这些域名也服务其他网站
+DOMAIN-SUFFIX,withpersona.com
+DOMAIN-SUFFIX,frompersona.com
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN,challenges.cloudflare.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripe.network
+DOMAIN-SUFFIX,stripecdn.com
+
+# 监控、客服及功能开关。后缀包括剪藏中的 us.sentry.io、两个 Intercom 主机等。
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,api.statsig.com
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,siftscience.com
+DOMAIN-SUFFIX,growthbook.io
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,usefathom.com
+
+# 现有主配置及 AI.list 使用的关键词；也会匹配同名第三方网站
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sift
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+
+# 客户端连接目的地址；现有 /21 包含官方 inbound 160.79.104.0/23，
+# 现有 /32 包含官方 inbound 2607:6bc0::/48 和历史模块提到的第二个 /48。
+IP-CIDR,153.61.224.0/22,no-resolve
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-ASN,399358,no-resolve
+
+# 按需启用：webshare.io 用于观察出口。
+# DOMAIN-SUFFIX,webshare.io
+# DOMAIN-KEYWORD,browser-intake
+# DOMAIN-KEYWORD,sentry
+
+# 官方 outbound 地址用于识别 Anthropic 发起的请求，通常用于服务端来源 allowlist。
+# IP-CIDR,153.61.208.0/20,no-resolve
+# NTP 提供时间同步，剪藏未提供 Claude Code 借此获取本地时区的证据。
+# 官方标记已退役的五个 /32 地址不参与匹配。
