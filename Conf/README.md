@@ -1,3 +1,4 @@
+[![Support on Afdian](https://img.shields.io/badge/Support-爱发电-orange.svg?style=flat-square&logo=afdian)](https://ifdian.net/a/Rabbit-Spec)
 <h1 align="center">Surge自用配置文件</h1>
 
 <h4 align="center">我自用的Surge配置文件 </h4>
@@ -14,6 +15,14 @@
 4. 配置简单，只需要修改几个参数即可愉快的上网冲浪。
 5. 使用外部规则以及外部节点，极大程度的避免规则失效以及非官方配置文件节点不能及时更新的问题。
 6. 这是一份非常干净的配置文件，没有搞任何可能引起可用性冲突的配置参数，极大程度的减少各种误杀以及兼容问题。
+
+## ☕ 赞助与支持
+
+如果你觉得 **Rabbit-Spec** 的「Surge自用配置以及模块和脚本」项目对你有帮助，欢迎请我喝杯咖啡。
+
+👉 [点击前往爱发电支持我](https://ifdian.net/a/Rabbit-Spec)
+
+---
 
 ## 如何使用
 ### 1. 安装环境
@@ -33,11 +42,6 @@ Surge最低支持版本 :<br>
 > **迷你版（英文） :** https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge-Mini.conf<br>
 
 > **完整版（中文） :** https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge-CN.conf<br>
-
-**适合 Surge 5 列表视图**<br>
-> **完整版 :** https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Surge.conf<br>
-
-> **轻量版 :** https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/Spec/Lite.conf<br>
 
 **适配两个机场订阅**<br>
 > **Family :** https://raw.githubusercontent.com/Rabbit-Spec/Surge/refs/heads/Master/Conf/Spec/Surge-Family.conf<br>
@@ -59,5 +63,8 @@ Surge最低支持版本 :<br>
 
 ## 我用的机场
 **我用着好用不代表你用着也好用，如果想要入手的话，建议先买一个月体验一下。任何机场都有跑路的可能。**<br>
-[「Nexitally」佩奇家主站，一家全线中转线路的高端机场。](https://naiixi.com/signupbyemail.aspx?MemberCode=0b532ff85dda43e595fb1ae17843ae6d20211110231626) <br>
-[「TAG」目前共有90+个国家地区节点，覆盖范围目前是机场里最广的。](https://482469.dedicated-afflink.com) <br>
+> **「Nexitally」:** [佩奇家主站，一家全线中转线路的高端机场，延迟低速度快。](https://nxonearth.com/signupbyemail.aspx?MemberCode=0b532ff85dda43e595fb1ae17843ae6d20211110231626) <br>
+
+> **「肯の机」:** [三网优化高端直连机场，直连机场天花板，支持协议丰富。](https://kendeji.io/#/auth?invite=uuYIpWNi) <br>
+
+> **「TAG」:** [目前共有90+个国家地区节点，覆盖范围目前是机场里最广的。](482469.l49.net) <br>

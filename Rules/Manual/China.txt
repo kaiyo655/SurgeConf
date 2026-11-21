@@ -1,0 +1,21 @@
+# 沉浸式翻译
+.immersivetranslate.com
+# 小佩宠物
+.petkit.com
+.petkit.cn
+.rtesvc.com
+# ASUS
+.asus.com
+# 1Password
+.agilebits.com
+.1password.com
+.1passwordusercontent.com
+# 圆刚采集卡
+.avermedia.com
+# Pokemon Sleep
+.sleep.pokemon
+# 鹅鸭杀
+cdp.cloud.unity3d.com
+config.uca.cloud.unity3d.com
+# 猫点饭
+umami.mao.fan
